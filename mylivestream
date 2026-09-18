@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Live Stream Archive</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 border-b border-slate-800 py-6 px-8 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-blue-400">🎮 My Stream Archive</h1>
+                <p class="text-sm text-slate-400 mt-1">A collection of all my past live streaming sessions on Facebook.</p>
+            </div>
+            <!-- Quick Link to Facebook Page -->
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" 
+               class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg text-sm transition-colors flex items-center gap-2 shadow">
+               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+               Visit Facebook Page
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="flex-grow max-w-7xl w-full mx-auto p-6 sm:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Stream Card 1 -->
+            <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col">
+                <!-- Video Container (Responsive Aspect Ratio for Facebook Embeds) -->
+                <div class="relative pb-[56.25%] bg-black">
+                    <!-- Replace the iframe 'src' URL with your Facebook video/live embed code URL -->
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FYourPageName%2Fvideos%2F123456789%2F&show_text=false&width=560&t=0" 
+                            class="absolute top-0 left-0 w-full h-full border-0" 
+                            scrolling="no" frameborder="0" allowfullscreen="true" 
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-blue-400 bg-blue-950/60 px-2.5 py-1 rounded-md w-max mb-2">Dota 2</span>
+                    <h3 class="text-lg font-bold text-slate-100">Epic Rank Match Comeback!</h3>
+                    <p class="text-slate-400 text-sm mt-1 mb-4 flex-grow">Playing hard support and turning things around in the late game.</p>
+                    <div class="text-xs text-slate-500 border-t border-slate-700/60 pt-3 flex justify-between items-center">
+                        <span>Streamed: Oct 12, 2026</span>
+                        <a href="https://facebook.com" target="_blank" class="text-blue-400 hover:underline">Watch on FB &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stream Card 2 -->
+            <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col">
+                <div class="relative pb-[56.25%] bg-black">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FYourPageName%2Fvideos%2F987654321%2F&show_text=false&width=560&t=0" 
+                            class="absolute top-0 left-0 w-full h-full border-0" 
+                            scrolling="no" frameborder="0" allowfullscreen="true" 
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-950/60 px-2.5 py-1 rounded-md w-max mb-2">Chill Stream</span>
+                    <h3 class="text-lg font-bold text-slate-100">Late Night Grind & Chat</h3>
+                    <p class="text-slate-400 text-sm mt-1 mb-4 flex-grow">Hanging out with the community, talking strategies, and answering questions.</p>
+                    <div class="text-xs text-slate-500 border-t border-slate-700/60 pt-3 flex justify-between items-center">
+                        <span>Streamed: Oct 10, 2026</span>
+                        <a href="https://facebook.com" target="_blank" class="text-blue-400 hover:underline">Watch on FB &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template for adding more cards: copy paste the block above here -->
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-center py-6 text-sm text-slate-500">
+        <p>&copy; 2026 My Streaming Archive. Built with HTML & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
